@@ -126,45 +126,58 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="flip-container" onclick="return true;">
-                        <div class="flipper">
-                            <div class="front">
-                                <span class="name">Construction</span>
+                <div class="col-sm-4">
+                    <div class="flip">
+                        <div class="card">
+                            <div class="face front">
+                                <div class="inner">
+                                    <img src="Compressed/wall4.JPG" style="width:360px; height:270px;" />
+                                </div>
                             </div>
-                            <div class="back">
-                                <p><b>Construction</b></p>
-                                <p>This is one of the services that we offer.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="flip-container1">
-                        <div class="flipper1">
-                            <div class="front1">
-                                <span class="name">Stonework</span>
-                            </div>
-                            <div class="back1">
-                                <p><b>Stonework</b></p>
-                                <p>This is one of the services that we offer.</p>
+                            <div class="face back">
+                                <div class="inner text-center">
+                                    <p style="color:white;">Construction</p>
+                                    <p>This is one of the services that we offer</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="flip-container2">
-                        <div class="flipper2">
-                            <div class="front2">
-                                <span class="name">Property Maintenance</span>
+                <div class="col-sm-4">
+                    <div class="flip">
+                        <div class="card">
+                            <div class="face front">
+                                <div class="inner">
+                                    <img src="Compressed/van.jpg" style="width:360px; height:270px;" />
+                                </div>
                             </div>
-                            <div class="back2">
-                                <p><b>Property Maintenance</b></p>
-                                <p>This is one of the services that we offer.</p>
+                            <div class="face back">
+                                <div class="inner text-center">
+                                    <p style="color:white;">Property Maintenance</p>
+                                    <p>This is one of the services that we offer</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-4">
+                    <div class="flip">
+                        <div class="card">
+                            <div class="face front">
+                                <div class="inner">
+                                    <img src="Compressed/wall3.jpg" style="width:360px; height:270px;" />
+                                </div>
+                            </div>
+                            <div class="face back">
+                                <div class="inner text-center">
+                                    <p style="color:white;">Stonework</p>
+                                    <p>This is one of the services that we offer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -492,6 +505,10 @@
                 else {
                     $(this).addClass('hover');
                 }
+            });
+
+            $('.flip').hover(function () {
+                $(this).find('.card').toggleClass('flipped');
             });
 
             $(function () {
