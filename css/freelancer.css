@@ -672,18 +672,39 @@ div#maincontent {
    width: 270px;
    z-index: 1;
 }
-.flip .card .img {
-   position: relative;
-   width: 360px;
-   height: 270px;
-   z-index: 1;
-   border: 2px solid #000;
+#stone {
+    position: relative;
+    width: 360px;
+    height: 270px;
+    z-index: 1;
+    border: 2px solid white;
+    background: url('../Compressed/wall4.JPG')0 0 no-repeat;
+    background-position:center;
+    background-size:100%;
+}
+#maintenance {
+    position: relative;
+    width: 360px;
+    height: 270px;
+    z-index: 1;
+    border: 2px solid white;
+    background: url('../Compressed/van.JPG')0 0 no-repeat;
+    background-position:center;
+    background-size:100%;
+}
+#construction {
+    position: relative;
+    width: 360px;
+    height: 270px;
+    z-index: 1;
+    border: 2px solid white;
+    background: url('../Compressed/wall2.JPG')0 0 no-repeat;
+    background-position:center;
+    background-size:100%;
 }
 .flip .card .back {
   padding-top: 10%;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 }
-.inner1{margin:0px !important;}
-.inner2{margin:0px !important;}
-.inner3{margin:0px !important;}
+.inner{margin:0px !important;}
