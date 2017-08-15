@@ -605,7 +605,7 @@ div#maincontent {
     height: 270px;
     z-index: 1;
     border: 2px solid white;
-    background: url('../Compressed/van.JPG')0 0 no-repeat;
+    background: url('../Compressed/van.jpg')0 0 no-repeat;
     background-position:center;
     background-size:100%;
 }
@@ -615,7 +615,7 @@ div#maincontent {
     height: 270px;
     z-index: 1;
     border: 2px solid white;
-    background: url('../Compressed/wall2.JPG')0 0 no-repeat;
+    background: url('../Compressed/wall2.jpg')0 0 no-repeat;
     background-position:center;
     background-size:100%;
 }
