@@ -129,7 +129,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="flip-container" onclick="this.classList.toggle('hover');">
+                    <div class="flip-container">
                         <div class="flipper">
                             <div class="front">
                                 <!-- front content -->
@@ -138,13 +138,13 @@
                             </div>
                             <div class="back">
                                 <!-- back content -->
-                                smith
+                                Construction
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="flip-container" onclick="this.classList.toggle('hover');">
+                    <div class="flip-container">
                         <div class="flipper">
                             <div class="front">
                                 <!-- front content -->
@@ -153,7 +153,7 @@
                             </div>
                             <div class="back">
                                 <!-- back content -->
-                                smith
+                                Maintenance
                             </div>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                             </div>
                             <div class="back">
                                 <!-- back content -->
-                                smith
+                                Stonework
                             </div>
                         </div>
                     </div>
@@ -486,26 +486,16 @@
     <script src="js/freelancer.min.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
-
-            //$(".flip-container").on("click", function () {
-            //    console.log("clicked");
-            //    $(this).toggleClass('hover');
-            //}).bind("ontouchstart", function () {
-            //    console.log("clicked");
-            //    $(this).toggleClass('hover');
-            //})
+        $(document).ready(function () {            
             $(".flip-container").hover(function () {
                 $(this).toggleClass('hover');
             });
 
             $(function () {
                 $(window).scroll(function () {
-                    var scroll = $(window).scrollTop(); // how many pixels you've scrolled
-                    var os = $('#about').offset().top; // pixels to the top of div1
-                    var ht = $('#about').height(); // height of div1 in pixels
-                    // if you've scrolled further than the top of div1 plus it's height
-                    // change the color. either by adding a class or setting a css property
+                    var scroll = $(window).scrollTop();
+                    var os = $('#about').offset().top;
+                    var ht = $('#about').height();
                     if (scroll > os) {
                         $('.navbar-custom').css({
                             'background': 'rgba(204,204,204, 1)',
