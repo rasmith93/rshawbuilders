@@ -139,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <!--<div class="col-lg-4">
                     <div class="flip-container1">
                         <div class="flipper1">
                             <div class="front1">
@@ -164,7 +164,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
@@ -469,23 +469,22 @@
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
-    <script src="js/touchpunch.min.js"></script>
+
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
 
-            $(".flip-container, .flip-container1, .flip-container2").bind('touchstart touchend', function (e) {
+            $(".flip-container, .flip-container1, .flip-container2").bind("touchstart touchend", function (e) {
                 e.preventDefault();
                 if ($(this).hasClass("hover")) {
                     $(this).removeClass('hover');
                 }
                 else {
                     $(this).addClass('hover');
-                }
-                
-            }).bind('touchend', function (e) {
+                }                
+            }).bind('touchstart, touchend', function (e) {
                 e.preventDefault();
                 if ($(this).hasClass("hover")) {
                     $(this).removeClass('hover');
