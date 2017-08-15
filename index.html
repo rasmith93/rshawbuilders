@@ -16,7 +16,7 @@
 
     <!-- Theme CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
-    
+        
     <!--Gallery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
@@ -31,6 +31,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+
 
 </head>
 
@@ -127,10 +129,11 @@
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flip-container" onclick="this.classList.toggle('hover');">
                         <div class="flipper">
                             <div class="front">
                                 <!-- front content -->
+                                <span class="name1">Construction</span>
                                 <img id="construction" />
                             </div>
                             <div class="back">
@@ -141,10 +144,11 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flip-container" onclick="this.classList.toggle('hover');">
                         <div class="flipper">
                             <div class="front">
                                 <!-- front content -->
+                                <span class="name1">Property Maintenance</span>
                                 <img id="maintenance" />
                             </div>
                             <div class="back">
@@ -155,10 +159,11 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flip-container">
                         <div class="flipper">
                             <div class="front">
                                 <!-- front content -->
+                                <span class="name1">Stonework</span>
                                 <img id="stone" />
                             </div>
                             <div class="back">
@@ -483,23 +488,17 @@
     <script type="text/javascript">
         $(document).ready(function () {
 
-            //$(".flip-container").bind("touchstart touchend", function (e) {
-            //    e.preventDefault();
-            //    if ($(this).hasClass("hover")) {
-            //        $(this).removeClass('hover');
-            //    }
-            //    else {
-            //        $(this).addClass('hover');
-            //    }                
-            //}).bind('touchstart, touchend', function (e) {
-            //    e.preventDefault();
-            //    if ($(this).hasClass("hover")) {
-            //        $(this).removeClass('hover');
-            //    }
-            //    else {
-            //        $(this).addClass('hover');
-            //    }
-            //});
+            //$(".flip-container").on("click", function () {
+            //    console.log("clicked");
+            //    $(this).toggleClass('hover');
+            //}).bind("ontouchstart", function () {
+            //    console.log("clicked");
+            //    $(this).toggleClass('hover');
+            //})
+            $(".flip-container").hover(function () {
+                console.log("clicked");
+                $(this).toggleClass('hover');
+            });
 
             $(function () {
                 $(window).scroll(function () {
