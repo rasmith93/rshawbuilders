@@ -68,10 +68,8 @@ hr.star-primary:after {
 }
 header {
     text-align: center;
-    /*background: #18BC9C;*/
     color: white;
-    /*background-image: url('../img/denfind-stone-central-scotland.jpg');*/
-    background-image: url('../img/wall5.png');
+    background-image: url('../Compressed/wall5.jpg');
     background-position: center;
     background-size: 100%;
     background-repeat:no-repeat;
@@ -535,7 +533,7 @@ div#maincontent {
 .addBorder{border:2px solid white; transform: rotateY( 180deg );}
 .display{display:block;}
 
-.flip-container {
+.flip-container,.flip-container1,.flip-container2 {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   -o-perspective: 1000;
@@ -544,20 +542,29 @@ div#maincontent {
 	border: 1px solid #ccc;
 }
 
-	.flip-container:hover .flipper,  
-  .flip-container.hover .flipper {
+.flip-container:hover .flipper,
+.flip-container1:hover .flipper1,
+.flip-container2:hover .flipper2,  
+.flip-container.hover .flipper,
+.flip-container1.hover .flipper1,
+.flip-container2.hover .flipper2 {
 		-webkit-transform: rotateY(180deg);
 		-moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
 		transform: rotateY(180deg);
-	}
+}
 
-.flip-container, .front, .back, .front1, .front2 {
+.hovering{-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+		transform: rotateY(180deg);}
+
+.flip-container,.flip-container1,.flip-container2, .front, .back, .front1, .front2, .back1, .back2 {
 	width: 360px;
 	height: 270px;
 }
 
-.flipper {
+.flipper,.flipper1,.flipper2 {
 	-webkit-transition: 0.6s;
 	-webkit-transform-style: preserve-3d;
 
@@ -573,7 +580,7 @@ div#maincontent {
 	position: relative;
 }
 
-.front, .fornt1, .front2, .back {
+.front, .fornt1, .front2, .back,.back1,.back2 {
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
@@ -585,28 +592,28 @@ div#maincontent {
 }
 
 .front {
-	background: url(../img/wall2.png) 0 0 no-repeat;
+	background: url(../Compressed/wall9.jpg) 0 0 no-repeat;
     background-position:center;
     background-size:100%;
 	z-index: 2;
     border:2px solid white;
 }
 .front1 {
-	background: url(../img/wall4.JPG) 0 0 no-repeat;
+	background: url(../Compressed/wall4.JPG) 0 0 no-repeat;
     background-position:center;
     background-size:100%;
 	z-index: 2;
     border:2px solid white;
 }
 .front2 {
-	background: url(../img/van.png) 0 0 no-repeat;
+	background: url(../Compressed/van.jpg) 0 0 no-repeat;
     background-position:center;
     background-size:100%;
 	z-index: 2;
     border:2px solid white;
 }
 
-.back {
+.back, .back1, .back2 {
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
@@ -628,7 +635,7 @@ div#maincontent {
 	text-shadow: 0.1em 0.1em 0.05em #333;	
 }
 
-.back p {
+.back p, .back1 p, .back2 p {
     color:white;	
 	text-align: center;
 	padding: 0px 5px 0px 5px;
