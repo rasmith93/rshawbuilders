@@ -153,9 +153,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #18BC9C;
+  background-color: red;
   color: white;
-  border-color: #18BC9C;
+  border-color: white;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -381,8 +381,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: white;
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: red;
+  border-color: white;
   font-weight: 700;
 }
 .btn-success:hover,
@@ -391,8 +391,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: white;
-  background-color: #128f76;
-  border-color: #11866f;
+  background-color: red;
+  border-color: white;
 }
 .btn-success:active,
 .btn-success.active,
@@ -571,6 +571,11 @@ div#maincontent {
   -webkit-transform: rotateY(180deg);
   background:rgba(33,33,33,1);
   color:white;
+  border:2px solid white;
+}
+
+.back p{
+    padding-left:10px!important;
 }
 
 .name1 {
@@ -587,7 +592,11 @@ div#maincontent {
       text-shadow: 0.1em 0.1em 0.05em #333;
     }
 
-
+.placeholder {
+    border: 2px dashed black;
+    width:100%;
+    height:200px;
+}
 
 #stone {
     position: relative;
@@ -618,6 +627,26 @@ div#maincontent {
     background: url('../Compressed/wall2.jpg')0 0 no-repeat;
     background-position:center;
     background-size:100%;
+}
+
+#backToTop{
+    height:50px;
+    width:50px;
+    border-radius:5px;
+    background: rgba(33,33,33,0.7);
+    color:white;    
+    position:fixed;
+    bottom:0;
+    right:0;
+    z-index:99;
+    cursor:pointer;
+    text-align:center;
+}
+#backToTop em{
+    text-align:center;
+    font-size:50px;
+    opacity:0.7
+    
 }
 
 
