@@ -103,7 +103,7 @@ header .intro-text .skills {
   }
   header .intro-text .skills {
     font-size: 1.75em;
-  }
+  }  
 }
 .navbar-custom {
     background: rgba(204,204,204, 0.8);
@@ -200,6 +200,11 @@ section.success {
       margin:0 auto;
       margin-bottom:10px;
   }
+  .flip-container{
+      /*width:80%!important;*/
+      margin:0 auto;
+      margin-bottom:10px;
+  }
 }
 #services .portfolio-item,
 #portfolio .portfolio-item {
@@ -258,6 +263,14 @@ section.success {
 @media (min-width: 767px) {
     #services .portfolio-item, #portfolio .portfolio-item {
         margin: 0 0 30px;
+    }
+}
+@media (min-width: 767px) and (max-width:992px) {
+    header {
+        background-position:center top;
+    }
+    .intro-text{
+        margin-top:-90px;
     }
 }
 
@@ -559,8 +572,8 @@ div#maincontent {
 .flip-container,
 .front,
 .back {
-  width: 360px;
-  height: 270px;
+  width: 100%;
+    height: 270px;
 }
 .flipper {
   -webkit-transition: 0.6s;
@@ -573,7 +586,6 @@ div#maincontent {
   position: absolute;
   top: 0;
   left: 0;
-  border:1px solid black;
 }
 .front {
   z-index: 2;
@@ -617,33 +629,32 @@ div#maincontent {
 
 #stone {
     position: relative;
-    width: 360px;
-    height: 270px;
+    width: 100%;
+    height: 100%;
     z-index: 1;
-    border: 2px solid white;
-    background: url('../Compressed/wall4.JPG')0 0 no-repeat;
     background-position:center;
     background-size:100%;
+    /*background: url('../Compressed/wall4.JPG')0 0 no-repeat;
+    background-position:center;
+    background-size:100%;*/
 }
 #maintenance {
     position: relative;
-    width: 360px;
-    height: 270px;
+    width: 100%;
+    height: 100%;
     z-index: 1;
-    border: 2px solid white;
-    background: url('../Compressed/van.jpg')0 0 no-repeat;
+    /*background: url('../Compressed/van.jpg')0 0 no-repeat;
     background-position:center;
-    background-size:100%;
+    background-size:100%;*/
 }
 #construction {
     position: relative;
-    width: 360px;
-    height: 270px;
+    width: 100%;
+    height: 100%;
     z-index: 1;
-    border: 2px solid white;
-    background: url('../Compressed/wall2.jpg')0 0 no-repeat;
+    /*background: url('../Compressed/wall2.jpg')0 0 no-repeat;
     background-position:center;
-    background-size:100%;
+    background-size:100%;*/
 }
 
 #backToTop{

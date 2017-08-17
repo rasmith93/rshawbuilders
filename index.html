@@ -135,7 +135,7 @@
                             <div class="front">
                                 <!-- front content -->
                                 <span class="name1">Stonework</span>
-                                <img id="stone" />
+                                <img id="stone" src="Compressed/wall4.JPG" class="img-responsive" />
                             </div>
                             <div class="back">
                                 <!-- back content -->
@@ -143,7 +143,7 @@
                                 <p>Specific text to follow.</p>
                             </div>
                         </div>
-                    </div>
+                      </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="flip-container">
@@ -151,7 +151,7 @@
                                 <div class="front">
                                     <!-- front content -->
                                     <span class="name1">Property Maintenance</span>
-                                    <img id="maintenance" />
+                                    <img id="maintenance" src="Compressed/van.jpg" class="img-responsive" />
                                 </div>
                                 <div class="back">
                                     <!-- back content -->
@@ -167,7 +167,7 @@
                                 <div class="front">
                                     <!-- front content -->
                                     <span class="name1">Construction</span>
-                                    <img id="construction" />
+                                    <img id="construction" src="Compressed/wall2.jpg" class="img-responsive" />
                                 </div>
                                 <div class="back">
                                     <!-- back content -->
@@ -719,7 +719,7 @@
 
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function () { scrollFunction() };
-
+            document.getElementById("backToTop").style.display = "none";
             function scrollFunction() {
                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                     document.getElementById("backToTop").style.display = "block";
