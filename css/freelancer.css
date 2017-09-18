@@ -13,6 +13,9 @@ p {
 p.small {
   font-size: 16px;
 }
+.logoImg1{
+    height:85px;
+}
 a,
 a:hover,
 a:focus,
@@ -196,6 +199,11 @@ section.success {
   section.first {
     padding-top: 75px;
   }
+  .logoImg1{
+    height:60px;
+    margin-top:3px;
+    margin-bottom:3px;
+}
   .placeholder{
       width:360px!important;
       margin:0 auto;
