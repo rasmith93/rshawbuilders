@@ -352,7 +352,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
+                    <h2>Contact Us</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -360,7 +360,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm">
+                    <form name="sentMessage" id="contactForm" action="/gdform.php">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="name">Name</label>
@@ -382,11 +382,17 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <p style="color:grey;">I am not a robot?&nbsp;&nbsp;<input type="checkbox" id="chkRobot" /></p>
+                                
+                            </div>
+                        </div>
                         <br>
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                <button type="submit" class="btn btn-success btnSendEmail btn-lg">Send</button>
                             </div>
                         </div>
                     </form>
@@ -838,6 +844,27 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".btnSendEmail").css("display", "none");
+
+            $("#chkRobot").on("click", function () {
+                //$("#chkRobot").toggle(this.checked);
+                showSend();
+            });
+
+            function showSend() {
+                if ($('#chkRobot').is(':checked')) {
+                    $(".btnSendEmail").css("display", "block");
+                }
+                else {
+                    $(".btnSendEmail").css("display", "none");
+                }
+            }            
+        });
+    </script>
+
 
     <script type="text/javascript">
         $(document).ready(function () {            
