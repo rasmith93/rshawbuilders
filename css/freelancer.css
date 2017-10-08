@@ -14,7 +14,7 @@ p.small {
   font-size: 16px;
 }
 .logoImg1{
-    height:85px;
+    height:113px;
 }
 a,
 a:hover,
@@ -108,6 +108,12 @@ header .intro-text .skills {
   header .intro-text .skills {
     font-size: 1.75em;
   }  
+  .navbar-nav {
+    margin: 7.5px -15px !important;
+    }
+}
+@media (max-width: 350px) {
+    .logoImg1{display:none;}
 }
 .navbar-custom {
     background: rgba(204,204,204, 0.8);
@@ -201,7 +207,7 @@ section.success {
     padding-top: 75px;
   }
   .logoImg1{
-    height:60px;
+    height:80px;
     margin-top:3px;
     margin-bottom:3px;
 }
@@ -284,6 +290,9 @@ section.success {
     }
     .intro-text{
         margin-top:-90px;
+    }
+    .logoImg1{
+    height:80px;
     }
 }
 
